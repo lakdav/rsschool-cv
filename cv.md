@@ -1,3 +1,5 @@
+![](image/coughingmanface-1924.svg)
+
 # **Lemonjava Gocha**
 
 ## **Personal information(PII)**
