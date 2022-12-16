@@ -36,9 +36,10 @@ svg {
 
 :root {
 	--ctl-blue-400: #5d6e7b;
-	--ctl-blue-600: #333d45;
+	--ctl-blue-600: #515a63;
 	--ctl-white: white;
 	--ctl-dark: black;
+	--clt-active: antiquewhite;
 }
 
 body.wrapper {
@@ -70,7 +71,7 @@ body.wrapper {
 	font-size: 1rem;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	color: antiquewhite;
+	color: var(--ctl-white);
 	white-space: nowrap;
 }
 .heading3 {
@@ -116,14 +117,29 @@ body.wrapper {
 	gap: 1rem;
 }
 .navigation__list-link {
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 	text-transform: capitalize;
 	font-weight: 700;
 	text-shadow: 2px 4px 6px var(--ctl-dark);
 	transition: color 0.3s;
+	position: relative;
 }
-.navigation__list-link:hover {
-	color: antiquewhite;
+.navigation__list-link::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 110%;
+	width: 0;
+	height: 1px;
+	transition: width 0.1s;
+}
+.navigation__list-link:hover,
+.navigation__list-link.active {
+	color: var(--clt-active);
+}
+.navigation__list-link.active::before {
+	width: 2rem;
+	background-color: var(--clt-active);
 }
 .avatar {
 	padding: 1rem;
@@ -139,18 +155,14 @@ body.wrapper {
 
 .aside {
 	grid-area: aside;
-	padding-block: 1rem;
 }
 .info,
 .contact {
-	margin-bottom: 3rem;
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
-	padding-left: 2rem;
-	padding-block: 1rem;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
+	padding: 2rem;
+
 	transition: all 0.3s;
 }
 .item__content {
@@ -160,6 +172,7 @@ body.wrapper {
 .item__content-field {
 	font-weight: 700;
 	font-size: 1.1rem;
+	min-width: 50%;
 	letter-spacing: 1px;
 	background-color: var(--ctl-dark);
 	padding: 0.3rem 1rem;
@@ -180,8 +193,6 @@ body.wrapper {
 .info:target,
 .contact:target {
 	background-color: var(--ctl-blue-600);
-	border-left: 10px solid var(--ctl-white);
-	border-right: 10px solid var(--ctl-white);
 }
 .contact__list {
 	display: flex;
@@ -261,10 +272,6 @@ body.wrapper {
 	}
 	.header__logo {
 		flex: 0 0 20rem;
-	}
-	.info:target,
-	.contact:target {
-		border-right: 10px solid transparent;
 	}
 	.footer {
 		padding-left: 20rem;
