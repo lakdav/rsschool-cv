@@ -107,9 +107,83 @@
         </section>
         <section id="skills" class="skills">
             <h2 class="h2">Skills</h2>
+            <ul class="skills__list">
+                <li class="skills__item">
+                    <div class="skill">
+                        <span class="skill__text">HTML</span>
+                        <span class="skill__progress" style="--p:80;"></span>
+                        <span class="skill__indicator">80%</span>
+                    </div>
+                </li>
+                <li class="skills__item">
+                    <div class="skill">
+                        <span class="skill__text">CSS</span>
+                        <span class="skill__progress" style="--p:80;"></span>
+                        <span class="skill__indicator">80%</span>
+                    </div>
+                </li>
+                <li class="skills__item">
+                    <div class="skill">
+                        <span class="skill__text">SASS</span>
+                        <span class="skill__progress" style="--p:80;"></span>
+                        <span class="skill__indicator">80%</span>
+                    </div>
+                </li>
+                <li class="skills__item">
+                    <div class="skill">
+                        <span class="skill__text">JS</span>
+                        <span class="skill__progress" style="--p:80;"></span>
+                        <span class="skill__indicator">80%</span>
+                    </div>
+                </li>
+                <li class="skills__item">
+                    <div class="skill">
+                        <span class="skill__text">REACT</span>
+                        <span class="skill__progress" style="--p:70;"></span>
+                        <span class="skill__indicator">70%</span>
+                    </div>
+                </li>
+                <li class="skills__item">
+                    <div class="skill">
+                        <span class="skill__text">NEXT</span>
+                        <span class="skill__progress" style="--p:50;"></span>
+                        <span class="skill__indicator">50%</span>
+                    </div>
+                </li>
+                <li class="skills__item">
+                    <div class="skill">
+                        <span class="skill__text">NODE</span>
+                        <span class="skill__progress" style="--p:60;"></span>
+                        <span class="skill__indicator">60%</span>
+                    </div>
+                </li>
+
+            </ul>
         </section>
         <section id="code" class="code">
             <h2 class="h2">Code</h2>
+            <p class="code__description">Find active link and add to him active class via hash</p>
+
+            <pre class="code__content">
+                    const views = {
+                        links: document.querySelectorAll('.navigation__list-link'),
+                        currentLink: null,
+                    };
+                                
+                    window.addEventListener('hashchange', () => {
+                        const hash = window.location.hash;
+                        if (views.currentLink) {
+                            views.currentLink.classList.remove('active');
+                        }
+                        views.links.forEach((link) => {
+                            if (link.hash.endsWith(hash)) {
+                                link.classList.add('active');
+                                views.currentLink = link;
+                            }
+                        });
+                    });
+                 </pre>
+
         </section>
     </main>
     <footer class="footer">
