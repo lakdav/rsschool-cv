@@ -5,12 +5,293 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css//style.css">
+    <title>Gocha lemonjava</title>
 </head>
 
-<body>
+<body class="wrapper">
+    <header class="header">
+        <div class="header__logo avatar">
+            <a class="avatar__link" href="#">
+                <img class="avatar__image" src="./image/coughingmanface-1924.svg" width="20" height="30"
+                    alt="my fake avatar">
+            </a>
+        </div>
+        <div class="header__content">
+            <h1 class="heading1">Lemonjava Gocha</h1>
+            <h2 class="heading2">Future web developer</h2>
+            <nav class="header__navigation navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__list-item">
+                        <a href="#information" class="navigation__list-link">information</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="#contact" class="navigation__list-link">Contact </a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="#education" class="navigation__list-link">Education </a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="#skills" class="navigation__list-link">Skills </a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="#code" class="navigation__list-link">Code </a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="#languages" class="navigation__list-link">languages</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <aside class="aside">
+        <section id="information" class="info">
+            <h3 class="heading3">Personal information</h3>
+            <ul class="info__list">
+                <li class="info__item item">
+                    <p class="item__content">
+                        <span class="item__content-field">First name</span>
+                        <span class="item__content-text">Gocha</span>
+                    </p>
+                </li>
+                <li class="info__item item">
+                    <p class="item__content">
+                        <span class="item__content-field">Last name</span>
+                        <span class="item__content-text">Lemonjava</span>
+                    </p>
+                </li>
+                <li class="info__item item">
+                    <p class="item__content">
+                        <span class="item__content-field">Age</span>
+                        <span class="item__content-text">37 </span>
+                    </p>
+                </li>
+                <li>
+                    <p class="item__content">
+                        <span class="item__content-field">Civil status</span>
+                        <span class="item__content-text">married</span>
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section id="contact" class="contact">
+            <h3 class="heading3">Contact Details</h3>
+            <ul class="contact__list">
+                <li class="contact__list-item">
+                    <address>
+                        <span class="contact__list-icon"><i class="fas fa-location-dot"></i></span>
+                        <span class="contact__list-text">Crimea,Simferopol</span>
+                    </address>
+                </li>
+                <li class="contact__list-item">
+                    <a href="tel:+79787815089">
+                        <span class="contact__list-icon"><i class="fas fa-phone"></i></span>
+                        <span class="contact__list-text">79787815089</span>
+                    </a>
+                </li>
+                <li class="contact__list-item">
+                    <a href="mailto:lakdav2016@mail.ru">
+                        <span class="contact__list-icon"><i class="fas fa-envelope"></i></span>
+                        <span class="contact__list-text">lakdav2016@mail.ru</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    <main class="main">
+        <section id="about" class="section about">
+            <h2 class="h2">About me</h2>
+            <div class="about__content">
+                <p class="paragrap">Hello my name is Gocha, I was born in Georgia 1985. After scholl my parents change
+                    place
+                    of residence to
+                    Crimea ,where I graduated from Medical University. </p>
+                <p class="paragrap">For the last 2 years I have started to be interested in web development and tryed to
+                    learn it by my self.
+                    My interest in web development has grown to the desire to become a frontend developer. Now I
+                    believe, or
+                    rather I am sure that I will be a developer
+                </p>
+            </div>
 
+        </section>
+        <section id="education" class="section education">
+            <h2 class="h2">Education</h2>
+            <ul class="education__list">
+                <li class="education__content">
+                    <h3 class="education__content-title"><span><i class="fas fa-university"></i></span> Crimean State
+                        Medical University</h3>
+                    <p class="education__content-date"> 2002 - 2008</p>
+                </li>
+                <li class="education__content">
+                    <h3 class="education__content-title"><span><i class="fas fa-university"></i></span> Residency in
+                        Crimean State Medical University</h3>
+                    <p class="education__content-date"> 2008 - 2011</p>
+                </li>
+                <li class="education__content active">
+                    <h3 class="education__content-title"><span><i class="fas fa-university"></i></span> Подготовительный
+                        курс «JavaScript/Front-end. Stage 0» <a href="https://rs.school/js-stage0/"
+                            style="color: green; cursor: pointer;"><i class="fas fa-link"></i></a></h3>
+                    <p class="education__content-date"> 2022 - <strong class="progress">in progress !!</strong> </p>
+                </li>
+            </ul>
+
+        </section>
+        <section id="skills" class="section skills">
+            <h2 class="h2">Skills</h2>
+            <ul class="skills__list">
+                <li class="skills__item">
+                    <div class="skill">
+                        <span class="skill__text">HTML</span>
+                        <span class="skill__progress" style="--p:80;--i:0;"></span>
+                        <span class="skill__indicator" style="--i:0;">80%</span>
+                    </div>
+                </li>
+                <li class="skills__item">
+                    <div class="skill">
+                        <span class="skill__text">CSS</span>
+                        <span class="skill__progress" style="--p:80;--i:1;"></span>
+                        <span class="skill__indicator" style="--i:1;">80%</span>
+                    </div>
+                </li>
+                <li class="skills__item">
+                    <div class="skill">
+                        <span class="skill__text">SASS</span>
+                        <span class="skill__progress" style="--p:80;--i:2;"></span>
+                        <span class="skill__indicator" style="--i:2;">80%</span>
+                    </div>
+                </li>
+                <li class="skills__item">
+                    <div class="skill">
+                        <span class="skill__text">JS</span>
+                        <span class="skill__progress" style="--p:80;--i:3;"></span>
+                        <span class="skill__indicator" style="--i:3;">80%</span>
+                    </div>
+                </li>
+                <li class="skills__item">
+                    <div class="skill">
+                        <span class="skill__text">REACT</span>
+                        <span class="skill__progress" style="--p:70;--i:4;"></span>
+                        <span class="skill__indicator" style="--i:4;">70%</span>
+                    </div>
+                </li>
+                <li class="skills__item">
+                    <div class="skill">
+                        <span class="skill__text">NEXT</span>
+                        <span class="skill__progress" style="--p:50;--i:5;"></span>
+                        <span class="skill__indicator" style="--i:5;">50%</span>
+                    </div>
+                </li>
+                <li class="skills__item">
+                    <div class="skill">
+                        <span class="skill__text">NODE</span>
+                        <span class="skill__progress" style="--p:60;--i:6"></span>
+                        <span class="skill__indicator" style="--i:6;">60%</span>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+        <section id="languages" class="section Languages">
+            <h2 class="h2">Languages</h2>
+            <table class="languages__table">
+                <thead>
+                    <tr>
+                        <th class="languages__table-th__emty"></th>
+                        <th class="languages__table-th" style="--clr:#e83f44;">Beginer</th>
+                        <th class="languages__table-th" style="--clr:#ee7f1a;">Elementary</th>
+                        <th class="languages__table-th" style="--clr:#53af39;">Pre-intermidiate</th>
+                        <th class="languages__table-th" style="--clr:#008ed2;">Intermidiate</th>
+                        <th class="languages__table-th" style="--clr:#35509b;">Upper-intermidiate</th>
+                        <th class="languages__table-th" style="--clr:#af14af;">Advanced</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="languages__table-td__col">English</th>
+                        <th class="languages__table-td" style="--clr:#e83f44;"></th>
+                        <th class="languages__table-td" style="--clr:#ee7f1a;"></th>
+                        <th class="languages__table-td" style="--clr:#53af39;"></th>
+                        <th class="languages__table-td active" style="--clr:#008ed2;"><i
+                                class="fas fa-check-circle fa-2xl"></i></th>
+                        <th class="languages__table-td" style="--clr:#35509b;"></th>
+                        <th class="languages__table-td" style="--clr:#af14af;"></th>
+                    </tr>
+                    <tr>
+                        <th class="languages__table-td__col">Russion</th>
+                        <th class="languages__table-td" style="--clr:#e83f44;"></th>
+                        <th class="languages__table-td" style="--clr:#ee7f1a;"></th>
+                        <th class="languages__table-td" style="--clr:#53af39;"></th>
+                        <th class="languages__table-td" style="--clr:#008ed2;"></th>
+                        <th class="languages__table-td active" style="--clr:#35509b;"><i
+                                class="fas fa-check-circle fa-2xl"></i></th>
+                        <th class="languages__table-td" style="--clr:#af14af;"></th>
+                    </tr>
+                    <tr>
+                        <th class="languages__table-td__col">Georgian</th>
+                        <th class="languages__table-td" style="--clr:#e83f44;"></th>
+                        <th class="languages__table-td" style="--clr:#ee7f1a;"></th>
+                        <th class="languages__table-td" style="--clr:#53af39;"></th>
+                        <th class="languages__table-td" style="--clr:#008ed2;"></th>
+                        <th class="languages__table-td active" style="--clr:#35509b;"><i
+                                class="fas fa-check-circle fa-2xl"></i></th>
+                        <th class="languages__table-td" style="--clr:#af14af;"></th>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="code" class="section code">
+            <h2 class="h2">Code</h2>
+            <p class="code__description"><span><i class="fas fa-code"></i></span> Find active link and add to him active
+                class via hash</p>
+
+            <pre class="code__content">
+                    const views = {
+                        links: document.querySelectorAll('.navigation__list-link'),
+                        currentLink: null,
+                    };
+                                
+                    window.addEventListener('hashchange', () => {
+                        const hash = window.location.hash;
+                        if (views.currentLink) {
+                            views.currentLink.classList.remove('active');
+                        }
+                        views.links.forEach((link) => {
+                            if (link.hash.endsWith(hash)) {
+                                link.classList.add('active');
+                                views.currentLink = link;
+                            }
+                        });
+                    });
+                 </pre>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__content">
+            <ul class="links">
+                <li class="link">
+                    <a href="https://rs.school/js/" target="_blank"><img src="https://rs.school/images/rs_school_js.svg"
+                            alt="RS school Logo"></a>
+                </li>
+                <li class="link">
+                    <a href="https://github.com/lakdav" target="_blank"> <span><i
+                                class="fab fa-github fa-2xl"></i></span>
+                    </a>
+                </li>
+            </ul>
+            <div class="copyright">
+                &copy; <span> By Lemonjava gocha 2022</span>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
