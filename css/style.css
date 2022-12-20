@@ -125,6 +125,15 @@ body.wrapper {
 .navigation {
 	padding: 1rem;
 }
+.navigation.stiky {
+	position: fixed;
+	top: 0;
+	margin-top: 1rem;
+	z-index: 100;
+}
+.navigation.stiky .navigation__list-link {
+	text-shadow: 2px 3px 3px black;
+}
 .navigation__list {
 	display: flex;
 	justify-content: center;
@@ -442,6 +451,11 @@ body.wrapper {
 }
 .languages__table-td.active {
 	background-color: rgba(250, 235, 215, 0.389);
+}
+.project {
+	color: black !important;
+	font-size: 2rem;
+	margin-left: 1rem;
 }
 @media screen and (min-width: 700px) {
 	.heading1 {
